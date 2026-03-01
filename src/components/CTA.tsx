@@ -2,7 +2,7 @@ import { ShoppingCart, Gift, Star } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export default function CTA() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <section className="bg-gradient-to-b from-white to-gray-50 py-12 md:py-16">
       <div className="max-w-5xl mx-auto px-6 md:px-12">
@@ -16,10 +16,12 @@ export default function CTA() {
             </div>
             <h2 className="text-4xl md:text-6xl mb-6">{t('cta.heading')}</h2>
             <p className="text-xl text-gray-300 leading-relaxed mb-10 max-w-2xl mx-auto">{t('cta.description')}</p>
-            <div className="mb-6">
-              <div className="text-5xl font-bold text-[#d4af37] mb-2">{t('cta.price')}</div>
-              <p className="text-gray-400">{t('cta.shipping', 'Free shipping worldwide')}</p>
-            </div>
+            {i18n.language === 'ja' && (
+              <div className="mb-6">
+                <div className="text-5xl font-bold text-[#d4af37] mb-2">{t('cta.price')}</div>
+                <p className="text-gray-400">{t('cta.shipping', 'Free shipping worldwide')}</p>
+              </div>
+            )}
             <button className="bg-[#d4af37] hover:bg-[#c19b2f] text-[#0a1628] px-10 py-4 text-lg font-medium tracking-wide transition-all duration-300 inline-flex items-center gap-3 group mb-6">
               <ShoppingCart className="w-5 h-5" />
               {t('cta.purchase')}

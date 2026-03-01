@@ -64,15 +64,17 @@ export function CTAFriendly({ language }: CTAFriendlyProps) {
               <span className="text-[#FF9A76]">{t.title2}</span>
             </h2>
             
-            {/* Price */}
-            <div className="mb-8">
-              <div className="flex items-center justify-center gap-3 mb-2">
-                <div className="text-6xl font-bold text-[#FF9A76]">
-                  {t.currentPrice}
+            {/* Price - Hidden for English */}
+            {language === 'ja' && (
+              <div className="mb-8">
+                <div className="flex items-center justify-center gap-3 mb-2">
+                  <div className="text-6xl font-bold text-[#FF9A76]">
+                    {t.currentPrice}
+                  </div>
+                  <span className="text-xl text-[#2D3748]">{t.taxIncluded}</span>
                 </div>
-                <span className="text-xl text-[#2D3748]">{t.taxIncluded}</span>
               </div>
-            </div>
+            )}
             
             {/* CTA Button */}
             <a 
