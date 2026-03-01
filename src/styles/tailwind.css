@@ -1,0 +1,6 @@
+/* Optional third-party CSS (animate) - import as CSS file */
+@import 'tw-animate-css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

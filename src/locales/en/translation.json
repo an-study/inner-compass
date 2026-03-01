@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "languageToggleAria": "Toggle language"
+  },
+  "hero": {
+    "kicker": "Premium Life Journal",
+    "titleLine1": "Navigate Your",
+    "titleHighlight": "Century",
+    "subtitle": "A sophisticated 100-year logbook designed to capture the extraordinary journey of your life, one day at a time.",
+    "buy": "Buy Now on Amazon",
+    "stats": {
+      "years": "100",
+      "yearsLabel": "Years",
+      "days": "365",
+      "daysLabel": "Days/Year",
+      "memories": "∞",
+      "memoriesLabel": "Memories"
+    },
+    "mockup": {
+      "title": "Hero Product Mockup",
+      "subtitle": "Premium Journal Cover Image"
+    }
+  },
+  "concepts": {
+    "title": "Concepts",
+    "mind": {
+      "label": "Mind",
+      "desc": "Reflections and mental models to guide your life."
+    },
+    "goals": {
+      "label": "Goals",
+      "desc": "Long-term and short-term goals to shape your path."
+    },
+    "memories": {
+      "label": "Memories",
+      "desc": "Collect moments that matter and revisit them."
+    },
+    "values": {
+      "label": "Values",
+      "desc": "Clarify what matters most to you."
+    }
+  },
+  "features": {
+    "kicker": "Interior Design",
+    "title": "Expertly Crafted Pages",
+    "subtitle": "Every page is meticulously designed to guide your reflection, planning, and growth with sophistication and clarity.",
+    "dayLog": {
+      "title": "Daily Log",
+      "desc": "Thoughtfully designed pages for capturing your daily experiences, gratitude, and insights with elegant prompts.",
+      "h1": "Morning intentions",
+      "h2": "Evening reflections",
+      "h3": "Gratitude practice",
+      "h4": "Energy tracking"
+    },
+    "visionMap": {
+      "title": "Vision Map",
+      "desc": "Strategic planning sections to map your long-term goals, aspirations, and the milestones of your century.",
+      "h1": "Decade planning",
+      "h2": "Life domains",
+      "h3": "Goal architecture",
+      "h4": "Progress tracking"
+    },
+    "anniversaryList": {
+      "title": "Anniversary List",
+      "desc": "Dedicated spaces to commemorate special moments, relationships, and achievements throughout your journey.",
+      "h1": "Memory markers",
+      "h2": "Relationship map",
+      "h3": "Achievement log",
+      "h4": "Celebration tracker"
+    },
+    "spread": {
+      "title": "Interior Page Spread Layout",
+      "subtitle": "Full Journal Spread Showcase",
+      "meta": "Daily Log • Vision Map • Anniversary Pages"
+    }
+  },
+  "testimonials": {
+    "title": "What people say",
+    "quote": "The perfect companion for reflection and long-term planning — beautifully designed."
+  },
+  "cta": {
+    "badge": "Limited Edition",
+    "heading": "Begin Your Journey Today",
+    "description": "Join thousands who have transformed their lives with the Inner Compass. Your 100-year adventure awaits.",
+    "price": "$149",
+    "purchase": "Purchase on Amazon",
+    "trustText": "Trusted by over 10,000+ customers worldwide",
+    "rating": "4.9/5"
+  },
+  "footer": {
+    "copy": "© 2026 Inner Compass: 100-Year Logbook Project. All rights reserved."
+  }
+}

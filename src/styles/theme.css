@@ -1,0 +1,33 @@
+:root {
+  --font-size: 16px;
+  --background: #ffffff;
+  --foreground: #1f2937; /* fallback color */
+  --card: #ffffff;
+  --border: rgba(0, 0, 0, 0.06);
+  --radius: 0.625rem;
+}
+
+.dark {
+  --background: #0b1220;
+  --foreground: #f8fafc;
+}
+
+html { font-size: var(--font-size); }
+/* Set a friendly Japanese rounded gothic as the default UI font. */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'M PLUS Rounded 1c', 'Noto Sans JP', 'Nunito', 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+/* Make headings follow the rounded UI style so the whole UI feels softer.
+   Inline styles that explicitly request Playfair will be removed from components
+   so this rule applies consistently. */
+h1, h2, h3, h4 {
+  line-height: 1.25;
+  font-family: 'M PLUS Rounded 1c', 'Noto Sans JP', 'Nunito', 'Inter', system-ui, sans-serif;
+}
+
+/* Basic element defaults (keeps things simple and PostCSS-safe) */
+label, button, input, textarea { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+
