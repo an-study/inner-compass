@@ -11,6 +11,9 @@ export function ImageWithFallback(props: React.ImgHTMLAttributes<HTMLImageElemen
   }
 
   const { src, alt, style, className, ...rest } = props
+  
+  // Add base URL for GitHub Pages deployment
+  const fullSrc = src && !src.startsWith('http') ? `${import.meta.env.BASE_URL}${src.startsWith('/') ? src.slice(1) : src}` : src
 
   return didError ? (
     <div
@@ -18,11 +21,11 @@ export function ImageWithFallback(props: React.ImgHTMLAttributes<HTMLImageElemen
       style={style}
     >
       <div className="flex items-center justify-center w-full h-full">
-        <img src={ERROR_IMG_SRC} alt="Error loading image" {...rest} data-original-url={src} />
+        <img src={ERROR_IMG_SRC} alt="Error loading image" {...rest} data-original-url={fullSrc} />
       </div>
     </div>
   ) : (
     // eslint-disable-next-line jsx-a11y/alt-text
-    <img src={src} alt={alt} className={className} style={style} {...rest} onError={handleError} />
+    <img src={fullSrc} alt={alt} className={className} style={style} {...rest} onError={handleError} />
   )
 }

@@ -14,10 +14,12 @@ export default function ImagePlaceholder({ id, src, alt = '', className = '', ex
   // If a file exists at the provided src (user can drop files into /public/images), the <img> will load it.
   // Otherwise we render the gray placeholder with the id so it's easy to replace locally.
   if (src) {
+    // Add base URL for GitHub Pages deployment
+    const fullSrc = src.startsWith('http') ? src : `${import.meta.env.BASE_URL}${src.startsWith('/') ? src.slice(1) : src}`;
     return (
       // the id helps the user find and replace the element if needed
       // allow image to cover the area while preserving aspect via object-cover
-      <img id={id} src={src} alt={alt || id} className={`w-full h-full object-cover rounded-lg ${className}`} width={width} height={height} />
+      <img id={id} src={fullSrc} alt={alt || id} className={`w-full h-full object-cover rounded-lg ${className}`} width={width} height={height} />
     );
   }
 
